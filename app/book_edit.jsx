@@ -65,7 +65,7 @@ const BookEdit = () => {
     try {
       setLoading(true);
       const updateData = { title, author, description };
-      const response = await fetch(`http://10.0.15.34:3000/api/books/${id}`, {
+      const response = await fetch(`http://192.168.1.100:3000/api/books/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updateData),

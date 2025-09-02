@@ -13,7 +13,7 @@ const BookDetail = () => {
     const fetchBook = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://10.0.15.34:3000/api/books/${id}`);
+        const response = await fetch(`http://192.168.1.100:3000/api/books/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch book details');
         }
